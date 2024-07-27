@@ -6,7 +6,7 @@ import {
   ROUTE_MARVEL_PAGE,
   ROUTE_SEARCH_PAGE,
 } from '../../router';
-import { DcPage, HeroPage, MarvelPage, SearchPAge } from './../../heroes';
+import { DcPage, HeroPage, MarvelPage, SearchPage } from './../../heroes';
 import { Navbar } from '../../ui/';
 
 export const HeroRoutes = () => {
@@ -17,7 +17,7 @@ export const HeroRoutes = () => {
         <Routes>
           <Route path={ROUTE_MARVEL_PAGE} element={<MarvelPage />} />
           <Route path={ROUTE_DC_PAGE} element={<DcPage />} />
-          <Route path={ROUTE_SEARCH_PAGE} element={<SearchPAge />} />
+          <Route path={ROUTE_SEARCH_PAGE} element={<SearchPage />} />
           <Route path={ROUTE_HERO_PAGE_ID} element={<HeroPage />} />
 
           {/* Default path */}

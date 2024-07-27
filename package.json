@@ -11,8 +11,10 @@
     "test": "jest --watchAll"
   },
   "dependencies": {
+    "@testing-library/dom": "^10.4.0",
     "animate.css": "^4.1.1",
-    "query-string": "^9.1.0",
+    "dom-testing-library": "^5.0.0",
+    "query-string": "^7.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router": "^6.24.1",

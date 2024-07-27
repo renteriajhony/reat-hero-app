@@ -4,7 +4,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { getHeroesByName } from '../helpers';
 import { HeroCard } from '../components';
 
-export const SearchPAge = () => {
+export const SearchPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { q = '' } = queryString.parse(location.search);
@@ -30,7 +30,7 @@ export const SearchPAge = () => {
         <div className='col-5'>
           <h4>Searching</h4>
           <hr />
-          <form onSubmit={onSearchSubmit}>
+          <form onSubmit={onSearchSubmit} aria-label='formSearch' >
             <input
               type='text'
               placeholder='Find your hero'
@@ -63,12 +63,14 @@ export const SearchPAge = () => {
 
           <div
             className='alert alert-primary animate__animated animate__fadeIn'
+            aria-label='divAlertSearch'
             style={{ display: showSearch ? 'block' : 'none' }}
           >
             Search hero
           </div>
           <div
             className='alert alert-danger animate__animated animate__fadeIn'
+            aria-label='divAlertDanger'
             style={{
               display: showError ? 'block' : 'none',
             }}

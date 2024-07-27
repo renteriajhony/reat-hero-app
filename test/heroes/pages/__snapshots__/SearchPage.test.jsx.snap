@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <SearchPage/> should render with values for defaulth 1`] = `
+<div>
+  <h1>
+    Search
+  </h1>
+  <hr />
+  <div
+    class="row"
+  >
+    <div
+      class="col-5"
+    >
+      <h4>
+        Searching
+      </h4>
+      <hr />
+      <form
+        aria-label="formSearch"
+      >
+        <input
+          autocomplete="off"
+          class="form-control"
+          id="searchText"
+          name="searchText"
+          placeholder="Find your hero"
+          type="text"
+          value=""
+        />
+        <button
+          class="btn btn-outline-primary mt-1"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div
+      class="col-7"
+    >
+      <h4>
+        Results
+      </h4>
+      <hr />
+      <div
+        aria-label="divAlertSearch"
+        class="alert alert-primary animate__animated animate__fadeIn"
+        style="display: block;"
+      >
+        Search hero
+      </div>
+      <div
+        aria-label="divAlertDanger"
+        class="alert alert-danger animate__animated animate__fadeIn"
+        style="display: none;"
+      >
+        There’s no result for: 
+        <b />
+      </div>
+    </div>
+  </div>
+</div>
+`;
